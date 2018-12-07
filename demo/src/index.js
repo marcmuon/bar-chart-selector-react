@@ -7,15 +7,11 @@ import "typeface-special-elite";
 class App extends Component {
   state = {
     vac: [],
-    titles: [],
-    buttons: [],
-    mult: 15,
+    track: 0,
+    mult: 1,
   }
-
   componentDidMount() {
-    
-    
-    fetch('/demo/src/2017_dtap.json')
+    fetch('/demo/src/vac.json')
       .then(response => response.json())
       .then(data => {
         this.setState({
@@ -25,187 +21,26 @@ class App extends Component {
   }
 
   barGen = (index) => {
-    if (index === 0) {
-      fetch('/demo/src/2017_dtap.json')
-        .then(response => response.json())
-        .then(data => {
-          this.setState({
-            vac: data,
-          });
-        });
-      this.state.titles[index].dark = true;
-      let arr = [0,1,2,3,4,5,6,7,8,9];
-      for (let i of arr) {
-        if (i !== index){
-          this.state.titles[i].dark = false;
-        }
-      }
-      this.setState(this.state);
-      }
-    else if (index === 1) {
-      fetch('/demo/src/2017_polio.json')
-        .then(response => response.json())
-        .then(data => {
-          this.setState({
-            vac: data,
-          });
-        });
-      
-      this.state.titles[index].dark = true;
-      let arr = [0,1,2,3,4,5,6,7,8,9];
-      for (let i of arr) {
-        if (i !== index){
-        this.state.titles[i].dark = false;
-        }
-      }
-      this.setState(this.state);
-    }
-    else if (index === 2) {
-      fetch('/demo/src/2017_mmr.json')
-        .then(response => response.json())
-        .then(data => {
-          this.setState({
-            vac: data,
-          });
-        });
-      this.state.titles[index].dark = true;
-      let arr = [0,1,2,3,4,5,6,7,8,9];
-      for (let i of arr) {
-        if (i !== index){
-          this.state.titles[i].dark = false;
-        } 
-      }
-      this.setState(this.state);
-    }
-    else if (index === 3) {
-      fetch('/demo/src/2017_hib.json')
-        .then(response => response.json())
-        .then(data => {
-          this.setState({
-            vac: data,
-          });
-        });
-      this.state.titles[index].dark = true;
-      let arr = [0,1,2,3,4,5,6,7,8,9];
-      for (let i of arr) {
-        if (i !== index) {
-          this.state.titles[i].dark = false;
-        }
-      }
-      this.setState(this.state);
-    }
-    else if (index === 4) {
-      fetch('/demo/src/2017_hepb.json')
-        .then(response => response.json())
-        .then(data => {
-          this.setState({
-            vac: data,
-          });
-        });
-      this.state.titles[index].dark = true;
-      let arr = [0,1,2,3,4,5,6,7,8,9];
-      for (let i of arr) {
-        if (i !== index) {
-          this.state.titles[i].dark = false;
-        } 
-      }
-      this.setState(this.state);
-    }
-    else if (index === 5) {
-      fetch('/demo/src/2017_varicella.json')
-        .then(response => response.json())
-        .then(data => {
-          this.setState({
-            vac: data,
-          });
-        });
-      this.state.titles[index].dark = true;
-      let arr = [0,1,2,3,4,5,6,7,8,9];
-      for (let i of arr) {
-        if (i !== index) {
-          this.state.titles[i].dark = false;
-        }
-      }
-      this.setState(this.state);  
-    }
-    else if (index === 6) {
-      fetch('/demo/src/2017_pcv.json')
-        .then(response => response.json())
-        .then(data => {
-          this.setState({
-            vac: data,
-          });
-        });
-      this.state.titles[index].dark = true;
-      let arr = [0,1,2,3,4,5,6,7,8,9];
-      for (let i of arr) {
-        if (i !== index){
-          this.state.titles[i].dark = false;
-        }
-      }
-      this.setState(this.state);
-    }
-    else if (index === 7) {
-      fetch('/demo/src/2017_hepa.json')
-        .then(response => response.json())
-        .then(data => {
-          this.setState({
-            vac: data,
-          });
-        });
-      this.state.titles[index].dark = true;
-      let arr = [0,1,2,3,4,5,6,7,8,9];
-      for (let i of arr) {
-        if (i !== index) {
-          this.state.titles[i].dark = false;
-        }
-      }
-      this.setState(this.state);
-    }
-    else if (index === 8) {
-      fetch('/demo/src/2017_rota.json')
-        .then(response => response.json())
-        .then(data => {
-          this.setState({
-            vac: data,
-          });
-        });
-      this.state.titles[index].dark = true;
-      let arr = [0,1,2,3,4,5,6,7,8,9];
-      for (let i of arr) {
-        if (i !== index) {
-          this.state.titles[i].dark = false;
-        }
-      }
-      this.setState(this.state);
-    }
-    else if (index === 9) {
-      fetch('/demo/src/2017_combined.json')
-        .then(response => response.json())
-        .then(data => {
-          this.setState({
-            vac: data,
-          });
-        });
-      this.state.titles[index].dark = true;
-      let arr = [0,1,2,3,4,5,6,7,8,9];
-      for (let i of arr) {
-        if (i !== index) {
-          this.state.titles[i].dark = false;
-        }
-      }
-      this.setState(this.state);
-    }
+    this.setState({
+      track: index,
+    });
+    console.log('clickin');
   }
 
   render() {    
     return (
       <div className="App">
-          <BarChart
-          array={this.state.vac}
-          multiplier={this.state.mult/15}>
-          </BarChart>
+        <div className="Container-Text">
+            <div >"The percentage of children who have received no vaccines has increased, reaching 1.3% for children born in 2015, compared with 0.3% among those 19–35 months when surveyed in 2001. <br/><br/>Some children might be unvaccinated because of choices made by parents, whereas for others, lack of access to health care or health insurance might be factors. <br/><br/>Unvaccinated children in the 2017 NIS-Child were disproportionately uninsured: 17.2% of unvaccinated children were uninsured, compared with 2.8% of all children."<br/><br/><span style={{fontSize: 15 + "px"}}><em>-Vaccination Coverage Among Children Aged 19–35 Months — United States, <a href="https://www.cdc.gov/mmwr/volumes/67/wr/mm6740a4.htm?s_cid=mm6740a4_w" rel="noopener noreferrer" target='_blank' >2017.</a></em></span></div>
         </div>
+        <BarChart
+          array={this.state.vac}
+          multiplier={this.state.mult}
+          track={this.state.track}
+          gotClicked={this.barGen}
+        >
+        </BarChart>
+      </div>
     );
   }
 }
