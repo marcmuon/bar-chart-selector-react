@@ -12,11 +12,9 @@
   ],
   "scripts": {
     "build": "nwb build-react-component",
-    "start": "nwb serve-react-demo",
-    "publish-please": "publish-please"
+    "start": "nwb serve-react-demo"
   },
   "dependencies": {
-    "publish-please": "^5.4.3",
     "typeface-special-elite": "0.0.54"
   },
   "peerDependencies": {
