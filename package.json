@@ -1,6 +1,6 @@
 {
   "name": "bar-chart-selector-react",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "bar-chart-selector-react component",
   "main": "lib/index.js",
   "module": "es/index.js",
