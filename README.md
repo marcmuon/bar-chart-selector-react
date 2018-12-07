@@ -1,4 +1,4 @@
-# react-barchart-selector-components 
+# bar-chart-selector-react 
 
 This component is a button selector system that will re-draw bar charts from a JSON on click. Supports arbitrary number of chart elements along with vertical scaling. Useful for displaying scientific data along an interactive second dimension. 
 
@@ -9,7 +9,7 @@ A demo using CDC survey data on childhood vaccination levels by insurance type i
 ### Installation
 
 ```
-npm install --save react-barchart-selector-components   # using NPM
+npm install --save bar-chart-selector-react   # using NPM
 
 ```
 
@@ -60,7 +60,7 @@ class App extends Component {
 
 ## License
 
-```react-barchart-selector-components``` is licensed under a MIT license.
+```bar-chart-selector-react``` is licensed under a MIT license.
 
 
 ## Authors

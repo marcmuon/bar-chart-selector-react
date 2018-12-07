@@ -1,7 +1,7 @@
 {
   "name": "bar-chart-selector-react",
   "version": "1.0.0",
-  "description": "bar-chart-selector-react React component",
+  "description": "bar-chart-selector-react component",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -30,10 +30,10 @@
     "react": "^16.6.3",
     "react-dom": "^16.6.3"
   },
-  "author": "",
-  "homepage": "",
+  "author": "Marc Kelechava",
+  "homepage": "https://www.github.com/marcmuon",
   "license": "MIT",
-  "repository": "",
+  "repository": "https://github.com/marcmuon/react-barchart-selector-components",
   "keywords": [
     "react-component"
   ]
