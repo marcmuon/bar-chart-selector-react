@@ -30,7 +30,7 @@
     "react": "^16.6.3",
     "react-dom": "^16.6.3"
   },
-  "author": "Marc Kelechava",
+  "author": "marcmuon",
   "homepage": "https://www.github.com/marcmuon",
   "license": "MIT",
   "repository": "https://github.com/marcmuon/react-barchart-selector-components",
