@@ -16,7 +16,7 @@ npm install --save bar-chart-selector-react   # using NPM
 
 ```
 import React, {Component} from 'react'
-import { BarChart } from '../../src';
+import { BarChart } from 'bar-chart-selector-react';
 import "typeface-special-elite";
 
 class App extends Component {
