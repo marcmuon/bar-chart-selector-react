@@ -1,0 +1,17 @@
+[ 
+  {
+    "insurance": "Private Only",
+    "pct_est": 95.5,
+	"vaccine": "Hib Primary"
+  },
+  {
+    "insurance": "Any Medicaid",
+    "pct_est": 91.1,
+	"vaccine": "Hib Primary"
+  },
+  {
+    "insurance": "No Insurance",
+    "pct_est": 78,
+	"vaccine": "Hib Primary"
+  }
+]

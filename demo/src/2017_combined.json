@@ -1,0 +1,17 @@
+[ 
+  {
+    "insurance": "Private Only",
+    "pct_est": 76,
+	"vaccine": "Combined 7-vaccine"
+  },
+  {
+    "insurance": "Any Medicaid",
+    "pct_est": 66.5,
+	"vaccine": "Combined 7-vaccine"
+  },
+  {
+    "insurance": "No Insurance",
+    "pct_est": 48.5,
+	"vaccine": "Combined 7-vaccine"
+  }
+]

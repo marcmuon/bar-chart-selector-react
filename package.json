@@ -19,7 +19,9 @@
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server"
   },
-  "dependencies": {},
+  "dependencies": {
+    "typeface-special-elite": "0.0.54"
+  },
   "peerDependencies": {
     "react": "16.x"
   },

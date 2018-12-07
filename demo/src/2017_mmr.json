@@ -1,0 +1,17 @@
+[ 
+  {
+    "insurance": "Private Only",
+    "pct_est": 93.7,
+	"vaccine": "MMR"
+  },
+  {
+    "insurance": "Any Medicaid",
+    "pct_est": 90.4,
+	"vaccine": "MMR"
+  },
+  {
+    "insurance": "No Insurance",
+    "pct_est": 74.6,
+	"vaccine": "MMR"
+  }
+]

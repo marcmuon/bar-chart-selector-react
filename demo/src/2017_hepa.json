@@ -1,0 +1,17 @@
+[ 
+  {
+    "insurance": "Private Only",
+    "pct_est": 88.1,
+	"vaccine": "HepA (≥1)"
+  },
+  {
+    "insurance": "Any Medicaid",
+    "pct_est": 85.3,
+	"vaccine": "HepA (≥1)"
+  },
+  {
+    "insurance": "No Insurance",
+    "pct_est": 63.3,
+	"vaccine": "HepA (≥1)"
+  }
+]

@@ -1,0 +1,17 @@
+[ 
+  {
+    "insurance": "Private Only",
+    "pct_est": 81.8,
+	"vaccine": "Rotavirus"
+  },
+  {
+    "insurance": "Any Medicaid",
+    "pct_est": 66.8,
+	"vaccine": "Rotavirus"
+  },
+  {
+    "insurance": "No Insurance",
+    "pct_est": 51.5,
+	"vaccine": "Rotavirus"
+  }
+]

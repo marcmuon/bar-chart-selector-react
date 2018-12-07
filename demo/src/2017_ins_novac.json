@@ -1,0 +1,14 @@
+[ 
+  {
+    "insurance": "Private Only",
+    "pct_est": 0.8
+  },
+  {
+    "insurance": "Any Medicaid",
+    "pct_est": 1
+  },
+  {
+    "insurance": "No Insurance",
+    "pct_est": 7.1
+  }
+]

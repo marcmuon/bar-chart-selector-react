@@ -1,0 +1,63 @@
+.Graph-BarChart {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: flex-end;
+    padding-top: 15px;
+    height: 500px;
+  }
+  
+  .Graph-Bar {
+    width: 15%;
+    transform: translate3d(0, 0, 0);
+    transition: transform 2s,
+                box-shadow 2s,
+                filter 5s;
+    background-color: #036564;
+    font-family: 'Special Elite', cursive;
+    color: #e8ddcb;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align: center;
+  }
+  
+  .Graph-Bar:hover {
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    transform: translate3d(0, 0, 200px);
+    filter: contrast(2.0);
+  }
+  
+  .Graph-Description {
+    font-family: 'Special Elite', cursive;
+    color: #036564;
+    font-size: 30px;
+    padding-top: 55px;
+    padding-left: 40px;
+  }
+
+  .Container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 95px;
+    margin-right: 95px;
+    border-color: hsl(196, 92%, 15%);
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 115px;
+  }
+
+  .Header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    background-color: #E8DDCB;
+    font-family: 'Special Elite', cursive;
+    color: #031634;
+    font-size: 50px;
+    border-color: #033649;
+    border-style: solid;
+    border-width: .5px;
+  } 

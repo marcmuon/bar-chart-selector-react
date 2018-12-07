@@ -1,0 +1,17 @@
+[ 
+  {
+    "insurance": "Private Only",
+    "pct_est": 95.2,
+	"vaccine": "Poliovirus"
+  },
+  {
+    "insurance": "Any Medicaid",
+    "pct_est": 91.2,
+	"vaccine": "Poliovirus"
+  },
+  {
+    "insurance": "No Insurance",
+    "pct_est": 77.9,
+	"vaccine": "Poliovirus"
+  }
+]

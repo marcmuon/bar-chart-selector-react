@@ -1,0 +1,17 @@
+[ 
+  {
+    "insurance": "Private Only",
+    "pct_est": 94.5,
+	"vaccine": "PCV (≥3)"
+  },
+  {
+    "insurance": "Any Medicaid",
+    "pct_est": 90.5,
+	"vaccine": "PCV (≥3)"
+  },
+  {
+    "insurance": "No Insurance",
+    "pct_est": 75.2,
+	"vaccine": "PCV (≥3)"
+  }
+]

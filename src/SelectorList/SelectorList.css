@@ -1,0 +1,23 @@
+.Linklist {
+    padding-top: 15px;
+    padding-left: 10px;
+    font-family: 'Special Elite', cursive;
+  }
+  
+  button {
+    background-color:#036564; 
+    color: #e8ddcb;
+    padding: 10px;
+  }
+  
+  .Button-Dark {
+    background-color: #033649;
+    color: #e8ddcb;
+    padding: 10px;
+  }
+  
+  .Button-Light {
+    background-color:#036564; 
+    color: #e8ddcb;
+    padding: 10px;
+  }

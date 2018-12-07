@@ -1,0 +1,17 @@
+[ 
+  {
+    "insurance": "Private Only",
+    "pct_est": 96.5,
+	"vaccine": "DTaP (≥3)"
+  },
+  {
+    "insurance": "Any Medicaid",
+    "pct_est": 92.6,
+	"vaccine": "DTaP (≥3)"
+  },
+  {
+    "insurance": "No Insurance",
+    "pct_est": 78.2,
+	"vaccine": "DTaP (≥3)"
+  }
+]
