@@ -1,16 +1,70 @@
-# bar-chart-selector-react
+# react-barchart-selector-components 
 
-[![Travis][build-badge]][build]
-[![npm package][npm-badge]][npm]
-[![Coveralls][coveralls-badge]][coveralls]
+This component is a button selector system that will re-draw bar charts from a JSON on click. Supports arbitrary number of chart elements along with vertical scaling. Useful for displaying scientific data along an interactive second dimension. 
 
-Describe bar-chart-selector-react here.
+### Demo
 
-[build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
-[build]: https://travis-ci.org/user/repo
+A demo using CDC survey data on childhood vaccination levels by insurance type is here: https://marcmuon.github.io/react-barchart-selector-components/index.html
 
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/npm-package
+### Installation
 
-[coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
-[coveralls]: https://coveralls.io/github/user/repo
+```
+npm install --save react-barchart-selector-components   # using NPM
+
+```
+
+### Example use
+
+```
+import React, {Component} from 'react'
+import { BarChart } from '../../src';
+import "typeface-special-elite";
+
+class App extends Component {
+  state = {
+    vac: [],
+    track: 0,
+    mult: 1,
+  }
+  componentDidMount() {
+    fetch('/demo/src/vac.json')
+      .then(response => response.json())
+      .then(data => {
+        this.setState({
+          vac: data,
+        });
+      });
+  }
+
+  barGen = (index) => {
+    this.setState({
+      track: index,
+    });
+  }
+
+  render() {    
+    return (
+        <BarChart
+          array={this.state.vac}
+          multiplier={this.state.mult}
+          track={this.state.track}
+          gotClicked={this.barGen}
+        >
+        </BarChart>
+      </div>
+    );
+  }
+}
+
+```
+
+## License
+
+```react-barchart-selector-components``` is licensed under a MIT license.
+
+
+## Authors
+
+* **Marc Kelechava** - *Initial work* - [Marc Muon](https://github.com/marcmuon)
+
+
