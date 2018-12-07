@@ -1,4 +1,4 @@
-import BarChart from "./BarChart/BarChart.js";
+import BarChart from "./BarChart";
 import "typeface-special-elite";
 export {
   BarChart,
