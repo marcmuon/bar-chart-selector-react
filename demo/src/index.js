@@ -179,7 +179,7 @@ class App extends Component {
     track: 0,
     mult: 1,
   }
-  
+ 
 
   barGen = (index) => {
     this.setState({
