@@ -4,7 +4,7 @@ This component is a button selector system that will re-draw bar charts from a J
 
 ### Demo
 
-A demo using CDC survey data on childhood vaccination levels by insurance type is here: https://marcmuon.github.io/bar-chart-selector-react/
+A demo using CDC survey data on childhood vaccination levels by insurance type is [here](https://marcmuon.github.io/bar-chart-selector-react/)
 
 ### Installation
 
